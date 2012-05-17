@@ -1,17 +1,24 @@
 //SDI Project 3
 //Abraham Kowitz
-//May 13, 2012
+//May 16, 2012
 
 // function for replacing console.log 
 
 var say = function(message) { console.log(message); };
-//SDI Project 3
-//Abraham Kowitz
-//May 13, 2012
 
-// function for replacing console.log 
-
-var say = function(message) { console.log(message); };
+var foodNames = [ "Ribs", "Grilled Vegetables", "Garlic Bread"],
+	minutesPerFoodItem = [ 45, 30, 15 ];
+	
+var cookAnItem = function() {
+	var foodName = foodNames[foodItem],
+		minutesThisItem = minutesPerFoodItem[foodItem];
+	say("Cooking the " + foodName + " will take about " + minutesThisItem + " minutes.");
+	for (var minutes = 0; minutes < minutesThisItem; minutes += 15);
+	say("The " + foodName + " are cooked, I'll move it to the edge of the fire.");
+};
+for (var foodItem = 0; foodItem < foodNames.length; foodItem++) {
+	cookAnItem();
+}
 
 // Global Variables
 
@@ -131,12 +138,7 @@ if (daylight === true){
   }
 }
 
-
-
-
-
-
-
+// return boolean
 
 
 
