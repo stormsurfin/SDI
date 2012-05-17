@@ -5,6 +5,13 @@
 // function for replacing console.log 
 
 var say = function(message) { console.log(message); };
+//SDI Project 3
+//Abraham Kowitz
+//May 13, 2012
+
+// function for replacing console.log 
+
+var say = function(message) { console.log(message); };
 
 // Global Variables
 
@@ -110,11 +117,24 @@ say("We have to turn around, the snow is too deep.")
 var daylight = true;
 var /*firewoood*/ findable = true;
 
-if (daylight === true) {
-	if (findable === true ) {
-	}
-return say("Can't find any more firewood!");
-};
+if (daylight === true){
+  if (findable === true){
+    say("While there's still light out, I'm looking for firewood");
+  } else {
+    say("Its to dark so I can't find any more firewood!");
+  }
+} else {
+  if (daylight === false){
+    say("Gotta dress warm, we won't have a fire tonight!");
+  } else {
+    say("It's still light enough to find firewood.");
+  }
+}
+
+
+
+
+
 
 
 
