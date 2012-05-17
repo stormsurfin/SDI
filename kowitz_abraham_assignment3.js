@@ -8,17 +8,7 @@ var say = function(message) { console.log(message); };
 
 var foodNames = [ "Ribs", "Grilled Vegetables", "Garlic Bread"],
 	minutesPerFoodItem = [ 45, 30, 15 ];
-	
-var cookAnItem = function() {
-	var foodName = foodNames[foodItem],
-		minutesThisItem = minutesPerFoodItem[foodItem];
-	say("Cooking the " + foodName + " will take about " + minutesThisItem + " minutes.");
-	for (var minutes = 0; minutes < minutesThisItem; minutes += 15);
-	say("The " + foodName + " are cooked, I'll move it to the edge of the fire.");
-};
-for (var foodItem = 0; foodItem < foodNames.length; foodItem++) {
-	cookAnItem();
-}
+var food = function() {say("The " + foodName + " are cooked, I'll move it to the edge of the fire.")};
 
 // Global Variables
 
@@ -138,8 +128,16 @@ if (daylight === true){
   }
 }
 
-// return boolean
-
+var cookAnItem = function() {
+	var foodName = foodNames[foodItem],
+		minutesThisItem = minutesPerFoodItem[foodItem];
+	say("Cooking the " + foodName + " will take about " + minutesThisItem + " minutes.");
+	for (var minutes = 0; minutes < minutesThisItem; minutes += 15);
+	food;
+};
+for (var foodItem = 0; foodItem < foodNames.length; foodItem++) {
+	cookAnItem();
+}
 
 
 
