@@ -44,6 +44,12 @@ if (offWork === true) {
 	say("I am going camping with my girlfriend this weekend!")
 }; 
 
+// pop mutator method
+
+weekendFun = [" camping", " hiking", " photography", " rock collecting", " skiing"];
+popped = weekendFun.pop();
+say("Our plan for the weekend:" + weekendFun);
+
 // conditional
 
 var packed = true
@@ -139,5 +145,18 @@ for (var foodItem = 0; foodItem < foodNames.length; foodItem++) {
 	cookAnItem();
 }
 
+//object
+
+var tent = {
+	duffleBag: ["clothes", 
+		"toiletries"
+		],
+	bed: ["sleeping bag", 
+		"sleeping pad", 
+		"down comforter", 
+		"pillows"
+		]
+	};
+say( tent.bed );
 
 
