@@ -37,14 +37,14 @@ var json = {
 // nested conditional
 
 var offWork = true;
-var temp = 71;
+var temp = 73;
 
-if (offWork === true) {
-	if (temp > 70);
+if (offWork === true, temp > 70) {
 	say("I am going camping with my girlfriend this weekend!")
-}; 
+	} else { false
+	};
 
-// pop mutator method
+// mutator 
 
 weekendFun = [" camping", " hiking", " photography", " rock collecting", " skiing"];
 popped = weekendFun.pop();
@@ -77,7 +77,7 @@ if (!rileyThirsty) {
 
 say("We need to have water, food, and sunscreen packed before we go hiking.")
 
-// arrays
+// arrays 
 
 var hikers = [
 	"Abe",
@@ -157,6 +157,11 @@ var tent = {
 		"pillows"
 		]
 	};
-say( tent.bed );
+
+//accessor	
+
+var key = "bed";
+
+say( tent[key] );
 
 
