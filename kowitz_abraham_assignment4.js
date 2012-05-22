@@ -39,3 +39,14 @@ function ValidURL(str) {
     return true;
   }
 };
+
+// Replace characters in a string
+
+var str = "A,B,C,D,E";
+var s = str.replace(/,/g,"/");
+console.log(s);
+
+// Format a number to a specific number of decimal places
+
+
+
