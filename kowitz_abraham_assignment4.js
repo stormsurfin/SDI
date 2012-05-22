@@ -64,20 +64,10 @@ Number.prototype.isFuzzy= function(compare, percent){
 var n= 151;
 console.log(n.isFuzzy(140,10));
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// Number of hours between two dates
+var startdate = 12/31/2000,
+	enddate = 05/25/2012;
+function dateDiff(startDate, endDate) {
+    return endDate.getDate() - startDate.getDate();
+    console.log(dateDiff);
+};
