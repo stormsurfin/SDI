@@ -13,10 +13,9 @@ function validate (phone) {
 
 var x = "mye@mail.com";
 function detectEmail(){
-	var x=document.forms["myForm"]["email"].value;
 	var atpos=x.indexOf("@");
 	var dotpos=x.lastIndexOf(".");
-		if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length){
+		if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length){ //checks for @ || checks for . || then checks for a second .
 			console.log("Not a valid e-mail address");
 			return false;
   	}
@@ -25,7 +24,7 @@ function detectEmail(){
 // Detect Url
 
 function ValidURL(str) {
-  var pattern = new RegExp('^(https?:\/\/)?'+ 
+  var pattern = new RegExp('^(https?:\/\/)?'+  //checks for http:// or https://
     '((([a-z\d]([a-z\d-]*[a-z\d])*)\.)+[a-z]{2,}|'+ 
     '((\d{1,3}\.){3}\d{1,3}))'+ 
     '(\:\d+)?(\/[-a-z\d%_.~+]*)*'+ 
@@ -43,14 +42,14 @@ function ValidURL(str) {
 // Replace characters in a string
 
 var str = "A,B,C,D,E";
-var s = str.replace(/,/g,"/");
+var s = str.replace(/,/g,"/"); // uses .replace to change , to /
 console.log(s);
 
 // Format a number to a specific number of decimal places
 
 var n = 566.8337;
 var twoDecimal = function (){
-	var n = number.toFixed(2);
+	var n = number.toFixed(2);  // uses .tofixed to round to hundredths
 	console.log("Converted " + twoDecimal + "to two decimal places.");
 	};
 
@@ -89,3 +88,21 @@ console.log(
      r.filter(gt, min)
   )
 );
+
+// Sum of numbers in a string
+
+function sum(){
+var val = document.getElementById('userInput').value;
+var temp = val.split(" ");
+
+var total = 0;
+var v;
+for(var i = 0; i < temp.length; i++) {
+v = parseFloat(temp[i]);
+if (!isNaN(v)) total += v;
+}
+
+document.getElementById('resultSum').innerHTML=total;
+
+}
+
