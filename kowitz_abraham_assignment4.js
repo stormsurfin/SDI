@@ -78,4 +78,14 @@ function dateDiff(startDate, endDate) {
 var stringNum = "9 years";
 console.log(parseFloat(stringNum));
 
-//
+// Smallest value in an array that is greater than 9
+
+var min=9;
+var r=[4, 7, 12, 24];
+function gt(a){return a>this; }
+
+console.log(
+  Math.min.apply(0,
+     r.filter(gt, min)
+  )
+);
