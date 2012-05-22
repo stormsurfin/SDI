@@ -48,5 +48,26 @@ console.log(s);
 
 // Format a number to a specific number of decimal places
 
+var number = 566.8337;
+var twoDecimal = function (n){
+	if (n = number.toFixed(2));
+	console.log("Converting" + n + " to two decimal places.");
+	};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
