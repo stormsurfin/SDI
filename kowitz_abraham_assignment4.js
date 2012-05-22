@@ -48,11 +48,21 @@ console.log(s);
 
 // Format a number to a specific number of decimal places
 
-var number = 566.8337;
-var twoDecimal = function (n){
-	if (n = number.toFixed(2));
-	console.log("Converting" + n + " to two decimal places.");
+var n = 566.8337;
+var twoDecimal = function (){
+	var n = number.toFixed(2);
+	console.log("Converted " + twoDecimal + "to two decimal places.");
 	};
+
+	
+//  Fuzzy match percentages
+
+Number.prototype.isFuzzy= function(compare, percent){
+    var dev= compare*(percent/100), n= +this;
+    return n>= compare-dev && n<= compare+dev;
+};
+var n= 151;
+console.log(n.isFuzzy(140,10));
 
 
 
