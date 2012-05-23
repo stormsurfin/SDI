@@ -1,4 +1,5 @@
 // Detecting a phone number
+
 var phone = "980-980-0098";
 function validate (phone) {
     var regex = /^([0-9]{3})[-]?([0-9]{3})[-]?([0-9]{4})$/;
@@ -56,12 +57,12 @@ var twoDecimal = function (){
 	
 //  Fuzzy match percentages
 
-Number.prototype.isFuzzy= function(compare, percent){
-    var dev= compare*(percent/100), n= +this;
+Number.prototype.isFuzzy= function(compare, percent){ //isFuzzy function compares a number and by what percentage
+    var dev= compare*(percent/100), n= +this; // math equation to make the number a percentage
     return n>= compare-dev && n<= compare+dev;
 };
-var n= 151;
-console.log(n.isFuzzy(140,10));
+var n= 151; // number to compare to
+console.log(n.isFuzzy(140,10)); // number compared, percentage
 
 // Number of hours between two dates
 
@@ -106,3 +107,8 @@ document.getElementById('resultSum').innerHTML=total;
 
 }
 
+// Sort an array of objects by a key value
+
+var array=[655, 77, 190, 1, 2004]
+console.log(array.sort(function(x,y){return x - y})); 
+// the array is sorted based on the relationship between each pair of elements and the return value.
